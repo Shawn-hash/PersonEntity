@@ -56,12 +56,3 @@ IEdmModel GetEdmModel()
     builder.EntitySet<Person>("People");  // 'People' is the OData EntitySet for the Person entity
     return builder.GetEdmModel();
 }
-
-builder.Services.ConfigureControllersWithViews(setup =>
-{
-    setup.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
-    {
-        Title = "Weather Forecasts",
-        Version = "v1"
-    });
-});
